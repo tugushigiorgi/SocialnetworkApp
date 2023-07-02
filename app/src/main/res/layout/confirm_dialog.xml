@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounderd_corner"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Are you sure you want to Delete this posts ?"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/confirmdialog_cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:background="@drawable/rounderd_corner"
+            android:backgroundTint="#FFFFFF"
+            android:text="Cancel"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF" />
+
+        <Button
+
+            android:id="@+id/confirmdialog_deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounderd_corner"
+            android:text="Delete"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

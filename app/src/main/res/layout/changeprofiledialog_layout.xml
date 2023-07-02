@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounderd_corner"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Change Picture"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/changeprofilephotoinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Piciture  Link"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/profiledialogexitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:background="@drawable/rounderd_corner"
+            android:backgroundTint="#FFFFFF"
+            android:text="Cancel"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF" />
+
+        <Button
+            android:id="@+id/dialogchnagephotobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounderd_corner"
+            android:backgroundTint="#E8E8E8"
+            android:text="Change"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

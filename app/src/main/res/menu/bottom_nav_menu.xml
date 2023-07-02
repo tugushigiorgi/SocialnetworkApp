@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="News Feed"
+        android:iconTint="#9FA1B6"
+            android:id="@+id/feedsFragment"
+        android:icon="@drawable/full_coverage_fill0_wght400_grad0_opsz48"/>
+    <item android:title="Post"
+        android:iconTint="#9FA1B6"
+        android:id="@+id/addPostFragment"
+        android:icon="@drawable/post_add_fill0_wght400_grad0_opsz48"/>
+
+
+    <item android:title="Profile"
+        android:iconTint="#9FA1B6"
+        
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/account_box_fill0_wght400_grad0_opsz48"/>
+
+
+
+</menu>

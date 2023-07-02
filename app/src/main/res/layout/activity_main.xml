@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <fragment
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="760dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navgraph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottonnavig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#41387D"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="#FFFFFF"
+        app:menu="@menu/bottom_nav_menu" />
+</LinearLayout>

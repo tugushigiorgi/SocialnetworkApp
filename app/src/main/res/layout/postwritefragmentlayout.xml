@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191B2D"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/postclearbtn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00E53935"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:textColor="#FA5B5B"
+        android:textColorHint="#00FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:rippleColor="#00FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editTextTextMultiLinePost"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/input_rounded_shape"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Post something.."
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8E8787" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/postwriteeBTN"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounderd_corner"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Post"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

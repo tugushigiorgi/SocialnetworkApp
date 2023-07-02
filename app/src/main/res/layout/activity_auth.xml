@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AuthActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/authtablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#41387D"
+
+        android:nestedScrollingEnabled="false"
+        app:tabIconTint="@color/white"
+        app:tabIndicator="@color/white"
+        app:tabIndicatorColor="#9FA1B6"
+        app:tabIndicatorHeight="1dp"
+        app:tabInlineLabel="true"
+        app:tabSelectedTextColor="#FFFFFF"
+
+        app:tabTextColor="#FFFFFF">
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/authviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191B2D"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context=".PostDetailedActivity">
+
+    <ImageButton
+        android:id="@+id/DetailedpostExitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/arrow_back_ios_fill0_wght400_grad0_opsz48" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroked_rounded_corner"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Detailed_profilephoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFFFFF"
+                android:layout_marginRight="5dp"
+  />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Detailed_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Giorgi tughushi"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/postdetailed_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="#7E7F93" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Detailed_userpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/detailedimageview"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_weight="0"
+            android:maxHeight="204dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                app:srcCompat="@drawable/comment_fill0_wght400_grad0_opsz48" />
+
+            <TextView
+                android:id="@+id/Detailed_commentindicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments(0)"
+                android:textColor="#9FA1B6"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_rectange"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/Detailed_commentinput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:hint="Comment something.."
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#818181"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/Detailed_commentbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/send_fill0_wght400_grad0_opsz48" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/DetailedpostCommentRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp" />
+</LinearLayout>
